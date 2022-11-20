@@ -15,7 +15,7 @@ form.addEventListener('submit', function(e) {
     if(!postalCodeValue) return alert("Informe seu CEP")
 
     let script = document.createElement('script');
-    script.src = `http://viacep.com.br/ws/${postalCodeValue}/json/?callback=fillAddress`;
+    script.src = `https://viacep.com.br/ws/${postalCodeValue}/json/?callback=fillAddress`;
     document.body.appendChild(script);
 })
 

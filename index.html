@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca Cep</title>
+    <link href="estilos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="principal">
+        <h2>Consulta CEP</h2>
+        <form>
+            <div class="frm-row">
+                <label for="cep">CEP</label>
+                <input type="text" name="cep" id="postalCode" maxlength="8">
+            </div>
+            <div class="frm-row">
+                <label>Rua</label>
+                <input type="text" name="rua" id="address" disabled>
+            </div>
+            <div class="frm-row">
+                <label>Bairro</label>
+                <input type="text" name="bairro" id="province" disabled>
+            </div>
+            <div class="frm-row">
+                <label>Cidade</label>
+                <input type="text" name="cidade" id="city" disabled>
+            </div>
+            <div class="frm-row">
+                <label>Estado</label>
+                <input type="text" name="estado" id="state" disabled>
+            </div>
+            <button type="submit" onclick="" id="js-submit">Buscar</button>
+        </form>
+    </div>
+    <script src="cep.js"></script>
+</body>
+</html>
